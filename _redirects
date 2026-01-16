@@ -1,0 +1,10 @@
+# Vanity URLs for resume
+/cv           /resume.pdf           200
+/resume       /resume.pdf           200
+/download     /resume.pdf           200
+
+# Force download with custom filename
+/download-resume    /resume.pdf           200
+
+# Optional: redirect old paths if you ever reorganize
+# /old-resume.pdf    /resume.pdf           301

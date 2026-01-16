@@ -1,0 +1,22 @@
+# Global headers for all pages
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# HTML page - short cache, revalidate often
+/index.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Resume PDF - longer cache since filename can be versioned
+/resume.pdf
+  Cache-Control: public, max-age=86400
+  Content-Type: application/pdf
+  Content-Disposition: inline
+
+# Force download version (if needed)
+/resume-download.pdf
+  Cache-Control: public, max-age=86400
+  Content-Type: application/pdf
+  Content-Disposition: attachment; filename="claudiu-resume.pdf"
