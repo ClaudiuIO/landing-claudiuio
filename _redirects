@@ -1,7 +1,10 @@
 # Vanity URLs for resume
 /cv           /resume.pdf           200
-/resume       /resume.pdf           200
 /download     /resume.pdf           200
+
+# HTML resume vanity URLs
+/cv-html      /resume-html.html     200
+/resume-web   /resume-html.html     200
 
 # Force download with custom filename
 /download-resume    /resume.pdf           200

@@ -15,6 +15,10 @@
   Content-Type: application/pdf
   Content-Disposition: inline
 
+# Resume HTML - same caching as PDF
+/resume-html.html
+  Cache-Control: public, max-age=86400
+
 # Force download version (if needed)
 /resume-download.pdf
   Cache-Control: public, max-age=86400
